@@ -1,4 +1,3 @@
-import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +17,6 @@ public class TestInit {
         System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        BasicConfigurator.configure();
     }
 
     @AfterClass
